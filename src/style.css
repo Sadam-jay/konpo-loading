@@ -200,7 +200,7 @@ nav .divider {
 .site-info {
   position: absolute;
   right: 1.5rem;
-  top: 50%;
+  top: 45%;
   transform: translateY((-50%));
   width: 20%;
   display: flex;
@@ -238,18 +238,22 @@ nav .divider {
   will-change: transform;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     letter-spacing: -0.05rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
   }
 
   nav .links {
     display: none;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .header {
+    transform: translateY(-30%);
   }
 
   .images-container .img {
@@ -261,13 +265,36 @@ nav .divider {
     width: calc(100% - 12.5rem);
   }
 
+  .sidebar {
+    width: 4rem;
+  }
+
   .site-info {
+    top: 60%;
     width: calc(100% - 12.5rem);
-    right: unset;
     left: 7.5rem;
+  }
+
+  .site-info-copy p {
+    font-size: 0.9rem;
   }
 }
 
-/* .animated-text {
-  visibility: hidden;
-} */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    letter-spacing: -0.05rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    transform: translateY(-40%);
+  }
+
+  .site-info-copy p {
+    font-size: 1.2rem;
+  }
+}

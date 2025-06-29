@@ -12,8 +12,6 @@ const setupTextSplitting = () => {
       linesClass: "line",
     });
 
-    // gsap.set(".animated-text", { visibility: "visible" });
-
     const lines = element.querySelectorAll(".line");
     lines.forEach((line) => {
       const textContent = line.textContent;
@@ -58,7 +56,6 @@ const createCounterDigits = () => {
 
 const animateCounter = (counter, duration, delay = 0) => {
   const numHeight = counter.querySelector(".num").clientHeight;
-  console.log(numHeight);
   const totalDistance =
     (counter.querySelectorAll(".num").length - 1) * numHeight;
 
